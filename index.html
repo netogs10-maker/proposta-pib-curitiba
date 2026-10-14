@@ -93,7 +93,7 @@ small,.src{font-size:clamp(.75rem,1.3vw,.95rem);color:#9fb0c8}.src a{color:#9fc3
 const VALORES_2026=[
  ["Bombeiros civis","ver Planos A/B/C"],
  ["Segurança descaracterizada","a definir"],
- ["Capacitações de voluntários","a definir"],
+ ["Capacitações de voluntários",'<span style="display:inline-flex;gap:1.2vw;flex-wrap:wrap;justify-content:flex-end"><span style="border:1px solid #f5b642;border-radius:8px;padding:.4vh .8vw"><b>R$ 22.500</b></span><span style="border:1px solid #f5b642;border-radius:8px;padding:.4vh .8vw"><b>R$ 15.720</b> — em 12x de R$ 1.310</span></span>'],
  ["Ambulância","a definir"],
  ["Eventos (Nataleluia / Celebre)","a definir"]];
 document.getElementById('vt').innerHTML='<tr><th style="text-align:left;padding:1.2vh;border-bottom:2px solid #f5b642">Item</th><th style="text-align:right;padding:1.2vh;border-bottom:2px solid #f5b642">Valor</th></tr>'+VALORES_2026.map(([a,b])=>`<tr><td style="padding:1.4vh;border-bottom:1px solid rgba(255,255,255,.15)">${a}</td><td style="text-align:right;padding:1.4vh;border-bottom:1px solid rgba(255,255,255,.15)">${b}</td></tr>`).join('');
