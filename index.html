@@ -16,27 +16,36 @@ small,.src{font-size:clamp(.75rem,1.3vw,.95rem);color:#9fb0c8}.src a{color:#9fc3
 #n{position:fixed;right:2vw;bottom:2vh;font-size:.9rem;color:#9fb0c8;z-index:9}
 .tag{display:inline-block;background:#e85d5d;color:#fff;border-radius:6px;padding:.1em .5em;font-weight:700}
 @media (max-width:700px){.s{justify-content:flex-start;padding:7vh 6vw;overflow-y:auto}}
-.ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}.s.bgp{background:#0b1a2e;isolation:isolate}.s.bgp::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(8,18,34,.92) 0,rgba(8,18,34,.78) 55%,rgba(8,18,34,.55))}.mos{display:flex;gap:1vw;margin-top:2.5vh}.mos img{width:24vw;max-width:360px;aspect-ratio:16/10;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,.2)}.cap{font-size:.8rem;opacity:.7;margin-top:1vh}.c p b,.c li b{display:inline}</style></head><body><div id="bar"></div><div id="n"></div>
+.c p b,.c li b{display:inline}
+:root{--r:12px;--sh:0 10px 30px rgba(0,0,0,.35)}
+.s.bgp{background-color:#0b1a2e;background-size:cover;background-position:var(--pos,center);isolation:isolate}
+.s.bgp::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(var(--dir,90deg),rgba(8,18,34,.94) 0,rgba(8,18,34,.80) 50%,rgba(8,18,34,var(--end,.5)))}
+.s.bgp.soft::before{background:linear-gradient(var(--dir,90deg),rgba(8,18,34,.96),rgba(8,18,34,.9))}
+.c{border-radius:var(--r)!important;box-shadow:var(--sh)}.bgp .c{background:rgba(11,26,46,.62);backdrop-filter:blur(3px)}
+.mos{display:flex;gap:1vw;margin-top:2.5vh;flex-wrap:wrap}.mos figure{margin:0}.mos img{width:24vw;max-width:360px;aspect-ratio:16/10;object-fit:cover;border-radius:var(--r);border:1px solid rgba(255,255,255,.2);box-shadow:var(--sh);display:block}
+.cap,.mos figcaption{font-size:.78rem;letter-spacing:.02em;opacity:.72;margin-top:.8vh}
+.credit{position:absolute;right:6vw;bottom:3vh;font-size:.72rem;opacity:.6;letter-spacing:.04em}
+</style><link rel="preload" as="image" href="img/palco.webp"></head><body><div id="bar"></div><div id="n"></div>
 
-<section class="s" id="capa"><div class="k">Proposta 2026</div><h1>Segurança, Brigada e Capacitação</h1><p style="margin-top:3vh;font-size:clamp(1.1rem,2.6vw,1.9rem)">Primeira Igreja Batista de Curitiba · Batel</p><p style="margin-top:1vh">Apresentação: <b>Neto Pereira</b></p><small style="margin-top:6vh">Toque à direita/deslize para avançar →</small></section>
+<section class="s bgp" id="capa" data-bg="img/palco.webp" style="--pos:center;--dir:90deg;--end:.35"><span class="credit">Palco e vitrais do templo</span><div class="k">Proposta 2026</div><h1>Segurança, Brigada e Capacitação</h1><p style="margin-top:3vh;font-size:clamp(1.1rem,2.6vw,1.9rem)">Primeira Igreja Batista de Curitiba · Batel</p><p style="margin-top:1vh">Apresentação: <b>Neto Pereira</b></p><small style="margin-top:6vh">Toque à direita/deslize para avançar →</small></section>
 
-<section class="s" id="cultos"><div class="k">Agenda semanal</div><h2>Cultos cobertos</h2><div class="g">
+<section class="s bgp" id="cultos" data-bg="img/templo-lotado.webp" style="--pos:right center;--dir:90deg;--end:.55"><span class="credit">Culto de domingo · templo lotado</span><div class="k">Agenda semanal</div><h2>Cultos cobertos</h2><div class="g">
 <div class="c"><b>Sexta à noite</b><p>One Flow (adolescentes) e ONE+ (jovens adultos) · ~19h30</p></div>
 <div class="c"><b>Sábado à noite</b><p>ONE (jovens) · 17h e 19h30</p></div>
 <div class="c"><b>Domingo</b><p>9h · 11h · 17h · 19h</p></div></div>
 <p style="margin-top:3vh"><span class="tag">Atenção</span> Não há culto no sábado de manhã.</p></section>
 
-<section class="s" id="eventos"><div class="k">Calendário</div><h2>Grandes eventos</h2><div class="g">
+<section class="s bgp" id="eventos" data-bg="img/coral-natal.webp" style="--pos:center;--dir:90deg;--end:.5"><span class="credit">Nataleluia · coral e cantata de Natal</span><div class="k">Calendário</div><h2>Grandes eventos</h2><div class="g">
 <div class="c"><b>Celebre</b><p>25/04/2026 · 9h às 17h<br>Festa anual de aniversário da igreja: feira gastronômica, bazar, outlet, empório e apresentações musicais<br><small>Números a confirmar com a igreja</small></p></div>
 <div class="c"><b>Nataleluia</b><p>Dezembro · 2025: 19, 20, 22, 23 e 25/12<br>Datas de 2026 a confirmar</p></div>
-<div class="c"><b>Também no ano</b><p>Uma Voz · Musical Koinonia · Summit · Missão Casais · Cristolândia</p></div></div></section>
+<div class="c"><b>Também no ano</b><p>Uma Voz · Musical Koinonia · Summit · Missão Casais · Cristolândia</p></div></div><div class="mos"><figure><img src="img/coral-natal.webp" loading="lazy" alt="Nataleluia"><figcaption>Nataleluia</figcaption></figure><figure><img src="img/templo-lotado.webp" loading="lazy" alt="Templo lotado"><figcaption>Grandes celebrações</figcaption></figure></div></section>
 
-<section class="s" id="publico"><div class="k">Dimensão do desafio</div><h2>Estimativa de público</h2><div class="g">
+<section class="s bgp" id="publico" data-bg="img/galerias.webp" style="--pos:center;--dir:90deg;--end:.75"><span class="credit">Galerias do templo</span><div class="k">Dimensão do desafio</div><h2>Estimativa de público</h2><div class="g">
 <div class="c"><b>Nataleluia 2025</b><div class="big">17 mil+</div><p>mais de 17 mil de público, expectativa divulgada (5 noites)</p><p class="src">Fontes: <a href="https://clubediskingressos.com.br/blog/espet%C3%A1culos/nataleluia-2025-%E2%80%9Cum-natal-de-liberdade%E2%80%9D-emociona-curitiba-com-hist%C3%B3ria-inspirada-em-fatos-reais" target="_blank">Clube Disk Ingressos, 09/12/2025</a></p></div>
 <div class="c"><b>Nataleluia 2024</b><div class="big">25 mil+</div><p>expectativa divulgada de público presencial</p><p class="src">Fonte: <a href="https://www.bandab.com.br/cultura/agenda-cultural-curitiba/nataleluia-2024-numeros-circenses-programacao/" target="_blank">Banda B, 20/12/2024</a></p></div>
 <div class="c"><b>Celebre 2026</b><div class="big" style="font-size:clamp(1.4rem,3vw,2.2rem)">+17 mil (estimativa)</div><p>Sem dados oficiais; com base na expectativa divulgada do Nataleluia, estimativa semelhante: mais de 17 mil. Estimativa por analogia, não é dado oficial. <b>A confirmar com a igreja.</b></p><p>Entrada gratuita, sem inscrição, das 9h às 17h no estacionamento da PIB</p><p>Festa anual de aniversário: feira gastronômica, bazar, outlet, empório e apresentações musicais (<a style="color:#9cc3ff" href="https://pibcuritiba.org.br/celebre24/" target="_blank">pibcuritiba.org.br/celebre24</a>)</p><p class="src">Fonte: <a href="https://pibcuritiba.org.br/celebre-2026-um-dia-de-comunhao-sabores-e-alegria-no-aniversario-da-pib-curitiba/" target="_blank">pibcuritiba.org.br</a></p></div></div></section>
 
-<section class="s bgp" id="adendo"><img class="ph" src="img/coral-natal.webp" loading="lazy" alt="Coral do Nataleluia"><div class="k">Adendo</div><h2>O que aconteceu no último Nataleluia</h2><div class="c warn"><p>No Nataleluia passado houve contratempos pontuais: <b>escada</b>, <b>técnico de segurança/aprovação</b> e <b>multa</b>.</p></div><div class="c ok" style="margin-top:2vh"><p>Com esta parceria, esses pontos são tratados antes do evento, para que não se repitam.</p></div></section>
+<section class="s bgp" id="adendo" data-bg="img/coral-natal.webp" style="--pos:right center;--dir:90deg;--end:.5"><span class="credit">Nataleluia</span><div class="k">Adendo</div><h2>O que aconteceu no último Nataleluia</h2><div class="c warn"><p>No Nataleluia passado houve contratempos pontuais: <b>escada</b>, <b>técnico de segurança/aprovação</b> e <b>multa</b>.</p></div><div class="c ok" style="margin-top:2vh"><p>Com esta parceria, esses pontos são tratados antes do evento, para que não se repitam.</p></div></section>
 
 <section class="s" id="aprendizados"><div class="k">Experiência de campo</div><h2>Aprendizados do último Nataleluia</h2><div class="g">
 <div class="c warn"><b>1 · Escada</b><p>Houve incidentes envolvendo a escada.</p></div>
@@ -44,9 +53,9 @@ small,.src{font-size:clamp(.75rem,1.3vw,.95rem);color:#9fb0c8}.src a{color:#9fc3
 <div class="c warn" style="border:2px solid #e85d5d;background:rgba(232,93,93,.16);box-shadow:0 0 24px rgba(232,93,93,.35)"><span class="tag">Caso mais crítico</span><b>3 · Caixa fechada</b><p>Num dia de lotação máxima, uma pessoa em situação de rua, já conhecida pela segurança por furtos e pequenos conflitos na igreja, deixou uma caixa totalmente fechada no meio do evento. Tratada como possível bomba, a situação poderia gerar um tumulto impossível de conter. Como a equipe já conhecia o indivíduo, o caso foi controlado com rapidez e o conflito, evitado.</p></div></div>
 <div class="c ok" style="margin-top:2vh"><p>Situações assim podem ocorrer em diversos cultos e eventos, sobretudo diante de acontecimentos recentes como atentados a escolas, grandes incêndios e conflitos. Equipe preparada, que conhece o público e o espaço, responde com calma e evita que um incidente vire tumulto.</p></div></section>
 
-<section class="s bgp" id="dor"><img class="ph" src="img/templo-lotado.webp" loading="lazy" alt="Templo da PIB Curitiba lotado"><div class="k">O problema real</div><h2>Como treinar a saída de emergência?</h2><div class="g">
+<section class="s bgp" id="dor" data-bg="img/templo-lotado.webp" style="--pos:center;--dir:90deg;--end:.55"><div class="k">O problema real</div><h2>Como treinar a saída de emergência?</h2><div class="g">
 <div class="c warn"><b>A dor</b><p>É impossível parar o culto para treinar a evacuação.</p></div>
-<div class="c ok"><b>A solução</b><p>Fechar uma porta por culto, redirecionando o público: um treino prático, real e sem tumulto.</p></div></div><div class="mos"><img src="img/galerias.webp" loading="lazy" alt="Galerias do templo"><img src="img/palco.webp" loading="lazy" alt="Palco e plenário"></div><p class="cap">Templo, galerias e palco da PIB Curitiba: milhares de pessoas por culto.</p></section>
+<div class="c ok"><b>A solução</b><p>Fechar uma porta por culto, redirecionando o público: um treino prático, real e sem tumulto.</p></div></div><div class="mos"><figure><img src="img/galerias.webp" loading="lazy" alt="Galerias do templo"><figcaption>Galerias</figcaption></figure><figure><img src="img/palco.webp" loading="lazy" alt="Palco e plenário"><figcaption>Palco e plenário</figcaption></figure></div><p class="cap">Milhares de pessoas por culto: cada saída precisa estar treinada.</p></section>
 
 <section class="s" id="bombeiros"><div class="k">Prevenção</div><h2>Bombeiros civis</h2><div class="g">
 <div class="c"><b>Efetivo</b><div class="big">1 a 2</div><p>por culto</p></div>
@@ -65,7 +74,7 @@ small,.src{font-size:clamp(.75rem,1.3vw,.95rem);color:#9fb0c8}.src a{color:#9fc3
 <div class="c"><b>Meta anual</b><div class="big">250</div><p>voluntários treinados</p></div>
 <div class="c"><b>Formato</b><p>4 treinamentos trimestrais<br>+ 1 do Ministério Infantil (até 100 pessoas)</p></div></div></section>
 
-<section class="s" id="retrospectiva"><div class="k">Retrospectiva 2025</div><h2>O que fizemos juntos em 2025</h2><div class="g">
+<section class="s bgp soft" id="retrospectiva" data-bg="img/palco.webp" style="--pos:center;--dir:90deg;--end:.9"><div class="k">Retrospectiva 2025</div><h2>O que fizemos juntos em 2025</h2><div class="g">
 <div class="c"><b>Capacitação</b><p>~150 pessoas capacitadas × R$ 90</p><div class="big">R$ 13.500</div></div>
 <div class="c"><b>Nataleluia</b><p>Equipe de brigada + assessoria + supervisão</p><div class="big">R$ 9.000</div></div>
 <div class="c"><b>Celebre e demais atividades</b><p>Não participamos.</p></div></div>
@@ -75,10 +84,10 @@ small,.src{font-size:clamp(.75rem,1.3vw,.95rem);color:#9fb0c8}.src a{color:#9fc3
 <div class="c"><b>Ano passado</b><p>R$ 90 por pessoa, cobrados à parte para brigada, Celebre e Nataleluia.</p></div>
 <div class="c ok"><b>Este ano</b><p>Contrato anual unificado, com desconto para as duas partes.</p></div></div></section>
 
-<section class="s" id="planos"><div class="k">Planos 2026</div><h2>Planos – Bombeiros civis 2026</h2><p style="margin-bottom:1.5vh">Base por bombeiro: sexta R$ 150 (noite) · sábado R$ 250 · domingo R$ 250 = R$ 650/semana · com 2 bombeiros, R$ 1.300/semana.</p><div class="g"><div class="c ok"><b>Plano A</b><p style="color:#f5b642;font-weight:700">Mensal · completo</p><p>Todos os cultos, 4 fins de semana, 2 bombeiros (R$ 2.600 por bombeiro).</p><div class="big">R$ 5.200</div><p>por mês</p></div><div class="c"><b>Plano B</b><p style="color:#f5b642;font-weight:700">Quinzenal</p><p>Um culto sim, um culto não: metade dos cultos.</p><div class="big">R$ 2.600</div><p>por mês</p></div><div class="c"><b>Plano C</b><p style="color:#f5b642;font-weight:700">Mensal pontual</p><p>Um fim de semana por mês.</p><div class="big">R$ 1.300</div><p>por mês</p></div></div></section>
+<section class="s bgp soft" id="planos" data-bg="img/galerias.webp" style="--pos:center;--dir:90deg;--end:.9"><div class="k">Planos 2026</div><h2>Planos – Bombeiros civis 2026</h2><p style="margin-bottom:1.5vh">Base por bombeiro: sexta R$ 150 (noite) · sábado R$ 250 · domingo R$ 250 = R$ 650/semana · com 2 bombeiros, R$ 1.300/semana.</p><div class="g"><div class="c ok"><b>Plano A</b><p style="color:#f5b642;font-weight:700">Mensal · completo</p><p>Todos os cultos, 4 fins de semana, 2 bombeiros (R$ 2.600 por bombeiro).</p><div class="big">R$ 5.200</div><p>por mês</p></div><div class="c"><b>Plano B</b><p style="color:#f5b642;font-weight:700">Quinzenal</p><p>Um culto sim, um culto não: metade dos cultos.</p><div class="big">R$ 2.600</div><p>por mês</p></div><div class="c"><b>Plano C</b><p style="color:#f5b642;font-weight:700">Mensal pontual</p><p>Um fim de semana por mês.</p><div class="big">R$ 1.300</div><p>por mês</p></div></div></section>
 <section class="s" id="valores"><div class="k">Proposta 2026</div><h2>Novos valores – contrato anual 2026</h2><table id="vt" style="width:100%;border-collapse:collapse;font-size:clamp(1rem,2.2vw,1.6rem)"></table><p style="margin-top:2vh"><small>Valores a definir em conjunto com a liderança, com desconto para as duas partes.</small></p></section>
 
-<section class="s" id="contato"><div class="k">Obrigado</div><h1>Vamos cuidar juntos de quem vem à PIB.</h1><p style="margin-top:4vh;font-size:clamp(1.2rem,2.8vw,2rem)"><b>Neto Pereira</b></p><p>Segurança, Brigada e Capacitação</p></section>
+<section class="s bgp" id="contato" data-bg="img/templo-lotado.webp" style="--pos:center;--dir:270deg;--end:.45"><span class="credit">Templo da PIB Curitiba</span><div class="k">Obrigado</div><h1>Vamos cuidar juntos de quem vem à PIB.</h1><p style="margin-top:4vh;font-size:clamp(1.2rem,2.8vw,2rem)"><b>Neto Pereira</b></p><p>Segurança, Brigada e Capacitação</p></section>
 <script>
 /* EDITE AQUI os valores do contrato anual 2026 */
 const VALORES_2026=[
@@ -91,7 +100,8 @@ document.getElementById('vt').innerHTML='<tr><th style="text-align:left;padding:
 </script>
 <script>
 const S=[...document.querySelectorAll('.s')],bar=document.getElementById('bar'),n=document.getElementById('n');let i=0;
-function go(k,h){i=Math.max(0,Math.min(S.length-1,k));S.forEach((s,j)=>s.classList.toggle('on',j==i));bar.style.width=((i+1)/S.length*100)+'%';n.textContent=(i+1)+' / '+S.length;if(h!==0)history.replaceState(null,'','#'+S[i].id)}
+function lb(s){if(s&&s.dataset.bg&&!s.dataset.ok){s.style.backgroundImage=`url(${s.dataset.bg})`;s.dataset.ok=1}}
+function go(k,h){i=Math.max(0,Math.min(S.length-1,k));lb(S[i]);lb(S[i+1]);S.forEach((s,j)=>s.classList.toggle('on',j==i));bar.style.width=((i+1)/S.length*100)+'%';n.textContent=(i+1)+' / '+S.length;if(h!==0)history.replaceState(null,'','#'+S[i].id)}
 function fromHash(){const j=S.findIndex(s=>'#'+s.id==location.hash);go(j<0?0:j,0)}
 addEventListener('hashchange',fromHash);fromHash();
 addEventListener('keydown',e=>{if(['ArrowRight','ArrowDown','PageDown',' ','Enter'].includes(e.key)){e.preventDefault();go(i+1)}else if(['ArrowLeft','ArrowUp','PageUp','Backspace'].includes(e.key)){e.preventDefault();go(i-1)}else if(e.key=='Home')go(0);else if(e.key=='End')go(S.length-1);else if(e.key=='f')document.documentElement.requestFullscreen?.()});
