@@ -93,7 +93,7 @@ small,.src{font-size:clamp(.75rem,1.3vw,.95rem);color:#9fb0c8}.src a{color:#9fc3
 const VALORES_2026=[
  ["Bombeiros civis","Planos A, B e C — R$ 250/diária"],
  ["Segurança descaracterizada","R$ 250/diária"],
- ["Capacitações de voluntários",'<span style="display:inline-flex;gap:1.2vw;flex-wrap:wrap;justify-content:flex-end"><span style="border:1px solid #f5b642;border-radius:8px;padding:.4vh .8vw"><b>R$ 22.500</b></span><span style="border:1px solid #f5b642;border-radius:8px;padding:.4vh .8vw"><b>R$ 15.720</b> — em 12x de R$ 1.310</span></span>'],
+ ["Capacitações de voluntários",'<span style="display:inline-flex;gap:1.2vw;flex-wrap:wrap;justify-content:flex-end"><span style="border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:.4vh .8vw;opacity:.5;text-decoration:line-through;text-decoration-thickness:2px;color:#9aa6b8">✕ R$ 22.500</span><span style="border:2px solid #f5b642;border-radius:8px;padding:.4vh .8vw;color:#f5b642;font-weight:700"><span style="background:#f5b642;color:#14284b;font-size:.65em;padding:.2vh .5vw;border-radius:4px;margin-right:.6vw;text-transform:uppercase;letter-spacing:.05em">valor vigente</span>R$ 15.720 — em 12x de R$ 1.310</span></span>'],
  ["Ambulância","a definir"],
  ["Eventos (Nataleluia / Celebre)","R$ 250/diária"]];
 document.getElementById('vt').innerHTML='<tr><th style="text-align:left;padding:1.2vh;border-bottom:2px solid #f5b642">Item</th><th style="text-align:right;padding:1.2vh;border-bottom:2px solid #f5b642">Valor</th></tr>'+VALORES_2026.map(([a,b])=>`<tr><td style="padding:1.4vh;border-bottom:1px solid rgba(255,255,255,.15)">${a}</td><td style="text-align:right;padding:1.4vh;border-bottom:1px solid rgba(255,255,255,.15)">${b}</td></tr>`).join('');
