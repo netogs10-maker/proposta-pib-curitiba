@@ -65,12 +65,29 @@ small,.src{font-size:clamp(.75rem,1.3vw,.95rem);color:#9fb0c8}.src a{color:#9fc3
 <div class="c"><b>Meta anual</b><div class="big">250</div><p>voluntários treinados</p></div>
 <div class="c"><b>Formato</b><p>4 treinamentos trimestrais<br>+ 1 do Ministério Infantil (até 100 pessoas)</p></div></div></section>
 
+<section class="s" id="retrospectiva"><div class="k">Retrospectiva 2025</div><h2>O que fizemos juntos em 2025</h2><div class="g">
+<div class="c"><b>Capacitação</b><p>~150 pessoas capacitadas × R$ 90</p><div class="big">R$ 13.500</div></div>
+<div class="c"><b>Nataleluia</b><p>Equipe de brigada + assessoria + supervisão</p><div class="big">R$ 9.000</div></div>
+<div class="c"><b>Celebre e demais atividades</b><p>Não participamos.</p></div></div>
+<div class="c ok" style="margin-top:2vh"><b>Total geral 2025</b><div class="big">R$ 22.500</div></div></section>
+
 <section class="s" id="modelo"><div class="k">Modelo comercial</div><h2>Mais simples para os dois lados</h2><div class="g">
 <div class="c"><b>Ano passado</b><p>R$ 90 por pessoa, cobrados à parte para brigada, Celebre e Nataleluia.</p></div>
 <div class="c ok"><b>Este ano</b><p>Contrato anual unificado, com desconto para as duas partes.</p></div></div></section>
 
-<section class="s" id="contato"><div class="k">Obrigado</div><h1>Vamos cuidar juntos de quem vem à PIB.</h1><p style="margin-top:4vh;font-size:clamp(1.2rem,2.8vw,2rem)"><b>Neto Pereira</b></p><p>Segurança, Brigada e Capacitação</p></section>
+<section class="s" id="valores"><div class="k">Proposta 2026</div><h2>Novos valores – contrato anual 2026</h2><table id="vt" style="width:100%;border-collapse:collapse;font-size:clamp(1rem,2.2vw,1.6rem)"></table><p style="margin-top:2vh"><small>Valores a definir em conjunto com a liderança, com desconto para as duas partes.</small></p></section>
 
+<section class="s" id="contato"><div class="k">Obrigado</div><h1>Vamos cuidar juntos de quem vem à PIB.</h1><p style="margin-top:4vh;font-size:clamp(1.2rem,2.8vw,2rem)"><b>Neto Pereira</b></p><p>Segurança, Brigada e Capacitação</p></section>
+<script>
+/* EDITE AQUI os valores do contrato anual 2026 */
+const VALORES_2026=[
+ ["Bombeiros civis","a definir"],
+ ["Segurança descaracterizada","a definir"],
+ ["Capacitações de voluntários","a definir"],
+ ["Ambulância","a definir"],
+ ["Eventos (Nataleluia / Celebre)","a definir"]];
+document.getElementById('vt').innerHTML='<tr><th style="text-align:left;padding:1.2vh;border-bottom:2px solid #f5b642">Item</th><th style="text-align:right;padding:1.2vh;border-bottom:2px solid #f5b642">Valor</th></tr>'+VALORES_2026.map(([a,b])=>`<tr><td style="padding:1.4vh;border-bottom:1px solid rgba(255,255,255,.15)">${a}</td><td style="text-align:right;padding:1.4vh;border-bottom:1px solid rgba(255,255,255,.15)">${b}</td></tr>`).join('');
+</script>
 <script>
 const S=[...document.querySelectorAll('.s')],bar=document.getElementById('bar'),n=document.getElementById('n');let i=0;
 function go(k,h){i=Math.max(0,Math.min(S.length-1,k));S.forEach((s,j)=>s.classList.toggle('on',j==i));bar.style.width=((i+1)/S.length*100)+'%';n.textContent=(i+1)+' / '+S.length;if(h!==0)history.replaceState(null,'','#'+S[i].id)}
